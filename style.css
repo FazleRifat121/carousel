@@ -8,7 +8,7 @@ body {
 section {
   padding: 40px 20px;
   background-color: #ffffff;
-  max-width: 1200px;
+  max-width: 500px;
   margin: auto;
   margin-top: 10px;
 }
@@ -40,11 +40,11 @@ section {
   scroll-snap-type: x mandatory;
   padding-bottom: 10px;
   -webkit-overflow-scrolling: touch;
-  scrollbar-width: none; /* Firefox */
+  scrollbar-width: none;
 }
 
 .carousel::-webkit-scrollbar {
-  display: none; /* Chrome, Safari, Edge */
+  display: none;
 }
 
 .carousel::-webkit-scrollbar-thumb {
