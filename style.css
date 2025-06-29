@@ -1,0 +1,94 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+section {
+  padding: 40px 20px;
+  background-color: #ffffff;
+  max-width: 1200px;
+  margin: auto;
+  margin-top: 10px;
+}
+
+.headline {
+  text-align: left;
+  margin-bottom: 20px;
+  font-size: 21.53px;
+  color: #9f9f9f;
+  font-weight: 400;
+}
+.red-color {
+  color: #9f0d0d;
+}
+.headline h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.headline p {
+  font-size: 1rem;
+  color: #666;
+}
+
+.carousel {
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 10px;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none; /* Firefox */
+}
+
+.carousel::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Edge */
+}
+
+.carousel::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 4px;
+}
+
+.carousel-item {
+  flex: 0 0 auto;
+  width: 250px;
+  border-radius: 16px;
+  overflow: hidden;
+  position: relative;
+  scroll-snap-align: start;
+  background-color: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  display: block;
+}
+
+.ig-handle {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 0.85rem;
+  backdrop-filter: blur(4px);
+}
+
+@media (max-width: 768px) {
+  .carousel-item {
+    width: 180px;
+    height: auto;
+  }
+
+  .carousel-item img {
+    height: 220px;
+  }
+}
